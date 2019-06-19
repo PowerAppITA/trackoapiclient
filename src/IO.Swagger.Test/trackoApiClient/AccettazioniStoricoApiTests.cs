@@ -71,44 +71,9 @@ namespace IO.Swagger.Test
         public void AccettazioniStoricoGetListTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //var response = instance.AccettazioniStoricoGetList();
-            //Assert.IsInstanceOf<BackofficeModelAPICommonDataSourceResult> (response, "response is BackofficeModelAPICommonDataSourceResult");
-        }
-        
-        /// <summary>
-        /// Test AccettazioniStoricoLockAccountCredential
-        /// </summary>
-        [Test]
-        public void AccettazioniStoricoLockAccountCredentialTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //int? utenteId = null;
-            //var response = instance.AccettazioniStoricoLockAccountCredential(utenteId);
-            //Assert.IsInstanceOf<BackofficeModelAPICommonMessageModel> (response, "response is BackofficeModelAPICommonMessageModel");
-        }
-        
-        /// <summary>
-        /// Test AccettazioniStoricoSendAccountCredential
-        /// </summary>
-        [Test]
-        public void AccettazioniStoricoSendAccountCredentialTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //int? utenteId = null;
-            //var response = instance.AccettazioniStoricoSendAccountCredential(utenteId);
-            //Assert.IsInstanceOf<BackofficeModelAPICommonMessageModel> (response, "response is BackofficeModelAPICommonMessageModel");
-        }
-        
-        /// <summary>
-        /// Test AccettazioniStoricoUnlockAccountCredential
-        /// </summary>
-        [Test]
-        public void AccettazioniStoricoUnlockAccountCredentialTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //int? utenteId = null;
-            //var response = instance.AccettazioniStoricoUnlockAccountCredential(utenteId);
-            //Assert.IsInstanceOf<BackofficeModelAPICommonMessageModel> (response, "response is BackofficeModelAPICommonMessageModel");
+            //ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost model = null;
+            //var response = instance.AccettazioniStoricoGetList(model);
+            //Assert.IsInstanceOf<Object> (response, "response is Object");
         }
         
     }

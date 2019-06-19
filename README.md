@@ -97,9 +97,6 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AccettazioniApi* | [**AccettazioniGetList**](docs/AccettazioniApi.md#accettazionigetlist) | **POST** /api/Accettazioni/GetList | 
 *AccettazioniStoricoApi* | [**AccettazioniStoricoGetList**](docs/AccettazioniStoricoApi.md#accettazionistoricogetlist) | **POST** /api/AccettazioniStorico/GetList | 
-*AccettazioniStoricoApi* | [**AccettazioniStoricoLockAccountCredential**](docs/AccettazioniStoricoApi.md#accettazionistoricolockaccountcredential) | **POST** /api/AccettazioniStorico/LockAccountCredential | 
-*AccettazioniStoricoApi* | [**AccettazioniStoricoSendAccountCredential**](docs/AccettazioniStoricoApi.md#accettazionistoricosendaccountcredential) | **POST** /api/AccettazioniStorico/SendAccountCredential | 
-*AccettazioniStoricoApi* | [**AccettazioniStoricoUnlockAccountCredential**](docs/AccettazioniStoricoApi.md#accettazionistoricounlockaccountcredential) | **POST** /api/AccettazioniStorico/UnlockAccountCredential | 
 *ClientiApi* | [**ClientiGetList**](docs/ClientiApi.md#clientigetlist) | **POST** /api/Clienti/GetList | 
 *ExternalMailerApi* | [**ExternalMailerHandlerMailup**](docs/ExternalMailerApi.md#externalmailerhandlermailup) | **POST** /api/ExternalMailer/HandlerMailup | 
 *ExternalMailerApi* | [**ExternalMailerUpdateRequestStatus**](docs/ExternalMailerApi.md#externalmailerupdaterequeststatus) | **POST** /api/ExternalMailer/UpdateRequestStatus | 
@@ -160,6 +157,10 @@ Class | Method | HTTP request | Description
  - [Model.BackofficeModelAccettazioniIndexMaskModel](docs/BackofficeModelAccettazioniIndexMaskModel.md)
  - [Model.BackofficeModelSorgentiIndexMaskModel](docs/BackofficeModelSorgentiIndexMaskModel.md)
  - [Model.BackofficeModelWSAPIHooksHandlerMailupData](docs/BackofficeModelWSAPIHooksHandlerMailupData.md)
+ - [Model.ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost](docs/ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost.md)
+ - [Model.ModelLayerBackDatatableResponseColumn](docs/ModelLayerBackDatatableResponseColumn.md)
+ - [Model.ModelLayerBackDatatableResponseOrder](docs/ModelLayerBackDatatableResponseOrder.md)
+ - [Model.ModelLayerBackDatatableResponseSearch](docs/ModelLayerBackDatatableResponseSearch.md)
  - [Model.ModelLayerNewsletterMailUpExportParameter](docs/ModelLayerNewsletterMailUpExportParameter.md)
  - [Model.ModelLayerNewsletterMailUpSearchParameter](docs/ModelLayerNewsletterMailUpSearchParameter.md)
 

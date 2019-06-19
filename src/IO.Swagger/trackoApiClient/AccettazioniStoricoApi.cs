@@ -31,8 +31,9 @@ namespace IO.Swagger.trackoApiClient
         /// 
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>BackofficeModelAPICommonDataSourceResult</returns>
-        BackofficeModelAPICommonDataSourceResult AccettazioniStoricoGetList ();
+        /// <param name="model"></param>
+        /// <returns>Object</returns>
+        Object AccettazioniStoricoGetList (ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost model);
 
         /// <summary>
         /// 
@@ -41,71 +42,9 @@ namespace IO.Swagger.trackoApiClient
         /// 
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of BackofficeModelAPICommonDataSourceResult</returns>
-        ApiResponse<BackofficeModelAPICommonDataSourceResult> AccettazioniStoricoGetListWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>BackofficeModelAPICommonMessageModel</returns>
-        BackofficeModelAPICommonMessageModel AccettazioniStoricoLockAccountCredential (int? utenteId);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>ApiResponse of BackofficeModelAPICommonMessageModel</returns>
-        ApiResponse<BackofficeModelAPICommonMessageModel> AccettazioniStoricoLockAccountCredentialWithHttpInfo (int? utenteId);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>BackofficeModelAPICommonMessageModel</returns>
-        BackofficeModelAPICommonMessageModel AccettazioniStoricoSendAccountCredential (int? utenteId);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>ApiResponse of BackofficeModelAPICommonMessageModel</returns>
-        ApiResponse<BackofficeModelAPICommonMessageModel> AccettazioniStoricoSendAccountCredentialWithHttpInfo (int? utenteId);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>BackofficeModelAPICommonMessageModel</returns>
-        BackofficeModelAPICommonMessageModel AccettazioniStoricoUnlockAccountCredential (int? utenteId);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>ApiResponse of BackofficeModelAPICommonMessageModel</returns>
-        ApiResponse<BackofficeModelAPICommonMessageModel> AccettazioniStoricoUnlockAccountCredentialWithHttpInfo (int? utenteId);
+        /// <param name="model"></param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> AccettazioniStoricoGetListWithHttpInfo (ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost model);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -115,8 +54,9 @@ namespace IO.Swagger.trackoApiClient
         /// 
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of BackofficeModelAPICommonDataSourceResult</returns>
-        System.Threading.Tasks.Task<BackofficeModelAPICommonDataSourceResult> AccettazioniStoricoGetListAsync ();
+        /// <param name="model"></param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> AccettazioniStoricoGetListAsync (ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost model);
 
         /// <summary>
         /// 
@@ -125,71 +65,9 @@ namespace IO.Swagger.trackoApiClient
         /// 
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (BackofficeModelAPICommonDataSourceResult)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPICommonDataSourceResult>> AccettazioniStoricoGetListAsyncWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of BackofficeModelAPICommonMessageModel</returns>
-        System.Threading.Tasks.Task<BackofficeModelAPICommonMessageModel> AccettazioniStoricoLockAccountCredentialAsync (int? utenteId);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of ApiResponse (BackofficeModelAPICommonMessageModel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPICommonMessageModel>> AccettazioniStoricoLockAccountCredentialAsyncWithHttpInfo (int? utenteId);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of BackofficeModelAPICommonMessageModel</returns>
-        System.Threading.Tasks.Task<BackofficeModelAPICommonMessageModel> AccettazioniStoricoSendAccountCredentialAsync (int? utenteId);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of ApiResponse (BackofficeModelAPICommonMessageModel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPICommonMessageModel>> AccettazioniStoricoSendAccountCredentialAsyncWithHttpInfo (int? utenteId);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of BackofficeModelAPICommonMessageModel</returns>
-        System.Threading.Tasks.Task<BackofficeModelAPICommonMessageModel> AccettazioniStoricoUnlockAccountCredentialAsync (int? utenteId);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of ApiResponse (BackofficeModelAPICommonMessageModel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPICommonMessageModel>> AccettazioniStoricoUnlockAccountCredentialAsyncWithHttpInfo (int? utenteId);
+        /// <param name="model"></param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> AccettazioniStoricoGetListAsyncWithHttpInfo (ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost model);
         #endregion Asynchronous Operations
     }
 
@@ -294,10 +172,11 @@ namespace IO.Swagger.trackoApiClient
         ///  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>BackofficeModelAPICommonDataSourceResult</returns>
-        public BackofficeModelAPICommonDataSourceResult AccettazioniStoricoGetList ()
+        /// <param name="model"></param>
+        /// <returns>Object</returns>
+        public Object AccettazioniStoricoGetList (ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost model)
         {
-             ApiResponse<BackofficeModelAPICommonDataSourceResult> localVarResponse = AccettazioniStoricoGetListWithHttpInfo();
+             ApiResponse<Object> localVarResponse = AccettazioniStoricoGetListWithHttpInfo(model);
              return localVarResponse.Data;
         }
 
@@ -305,9 +184,13 @@ namespace IO.Swagger.trackoApiClient
         ///  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of BackofficeModelAPICommonDataSourceResult</returns>
-        public ApiResponse< BackofficeModelAPICommonDataSourceResult > AccettazioniStoricoGetListWithHttpInfo ()
+        /// <param name="model"></param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse< Object > AccettazioniStoricoGetListWithHttpInfo (ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost model)
         {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling AccettazioniStoricoApi->AccettazioniStoricoGetList");
 
             var localVarPath = "/api/AccettazioniStorico/GetList";
             var localVarPathParams = new Dictionary<String, String>();
@@ -319,6 +202,11 @@ namespace IO.Swagger.trackoApiClient
 
             // to determine the Content-Type header
             String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/x-www-form-urlencoded"
             };
             String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
 
@@ -333,6 +221,14 @@ namespace IO.Swagger.trackoApiClient
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
 
 
             // make the HTTP request
@@ -348,19 +244,20 @@ namespace IO.Swagger.trackoApiClient
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<BackofficeModelAPICommonDataSourceResult>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (BackofficeModelAPICommonDataSourceResult) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPICommonDataSourceResult)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of BackofficeModelAPICommonDataSourceResult</returns>
-        public async System.Threading.Tasks.Task<BackofficeModelAPICommonDataSourceResult> AccettazioniStoricoGetListAsync ()
+        /// <param name="model"></param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> AccettazioniStoricoGetListAsync (ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost model)
         {
-             ApiResponse<BackofficeModelAPICommonDataSourceResult> localVarResponse = await AccettazioniStoricoGetListAsyncWithHttpInfo();
+             ApiResponse<Object> localVarResponse = await AccettazioniStoricoGetListAsyncWithHttpInfo(model);
              return localVarResponse.Data;
 
         }
@@ -369,9 +266,13 @@ namespace IO.Swagger.trackoApiClient
         ///  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (BackofficeModelAPICommonDataSourceResult)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPICommonDataSourceResult>> AccettazioniStoricoGetListAsyncWithHttpInfo ()
+        /// <param name="model"></param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> AccettazioniStoricoGetListAsyncWithHttpInfo (ModelLayerBackDatatableResponseAccettazioniStoricoDtAjaxPost model)
         {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling AccettazioniStoricoApi->AccettazioniStoricoGetList");
 
             var localVarPath = "/api/AccettazioniStorico/GetList";
             var localVarPathParams = new Dictionary<String, String>();
@@ -383,6 +284,11 @@ namespace IO.Swagger.trackoApiClient
 
             // to determine the Content-Type header
             String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/x-www-form-urlencoded"
             };
             String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
 
@@ -397,6 +303,14 @@ namespace IO.Swagger.trackoApiClient
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
 
 
             // make the HTTP request
@@ -412,498 +326,9 @@ namespace IO.Swagger.trackoApiClient
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<BackofficeModelAPICommonDataSourceResult>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (BackofficeModelAPICommonDataSourceResult) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPICommonDataSourceResult)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>BackofficeModelAPICommonMessageModel</returns>
-        public BackofficeModelAPICommonMessageModel AccettazioniStoricoLockAccountCredential (int? utenteId)
-        {
-             ApiResponse<BackofficeModelAPICommonMessageModel> localVarResponse = AccettazioniStoricoLockAccountCredentialWithHttpInfo(utenteId);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>ApiResponse of BackofficeModelAPICommonMessageModel</returns>
-        public ApiResponse< BackofficeModelAPICommonMessageModel > AccettazioniStoricoLockAccountCredentialWithHttpInfo (int? utenteId)
-        {
-            // verify the required parameter 'utenteId' is set
-            if (utenteId == null)
-                throw new ApiException(400, "Missing required parameter 'utenteId' when calling AccettazioniStoricoApi->AccettazioniStoricoLockAccountCredential");
-
-            var localVarPath = "/api/AccettazioniStorico/LockAccountCredential";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json", 
-                "text/json", 
-                "application/xml", 
-                "text/xml", 
-                "application/x-www-form-urlencoded"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json",
-                "text/json",
-                "application/xml",
-                "text/xml"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (utenteId != null && utenteId.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(utenteId); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = utenteId; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("AccettazioniStoricoLockAccountCredential", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<BackofficeModelAPICommonMessageModel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (BackofficeModelAPICommonMessageModel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPICommonMessageModel)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of BackofficeModelAPICommonMessageModel</returns>
-        public async System.Threading.Tasks.Task<BackofficeModelAPICommonMessageModel> AccettazioniStoricoLockAccountCredentialAsync (int? utenteId)
-        {
-             ApiResponse<BackofficeModelAPICommonMessageModel> localVarResponse = await AccettazioniStoricoLockAccountCredentialAsyncWithHttpInfo(utenteId);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of ApiResponse (BackofficeModelAPICommonMessageModel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPICommonMessageModel>> AccettazioniStoricoLockAccountCredentialAsyncWithHttpInfo (int? utenteId)
-        {
-            // verify the required parameter 'utenteId' is set
-            if (utenteId == null)
-                throw new ApiException(400, "Missing required parameter 'utenteId' when calling AccettazioniStoricoApi->AccettazioniStoricoLockAccountCredential");
-
-            var localVarPath = "/api/AccettazioniStorico/LockAccountCredential";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json", 
-                "text/json", 
-                "application/xml", 
-                "text/xml", 
-                "application/x-www-form-urlencoded"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json",
-                "text/json",
-                "application/xml",
-                "text/xml"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (utenteId != null && utenteId.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(utenteId); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = utenteId; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("AccettazioniStoricoLockAccountCredential", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<BackofficeModelAPICommonMessageModel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (BackofficeModelAPICommonMessageModel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPICommonMessageModel)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>BackofficeModelAPICommonMessageModel</returns>
-        public BackofficeModelAPICommonMessageModel AccettazioniStoricoSendAccountCredential (int? utenteId)
-        {
-             ApiResponse<BackofficeModelAPICommonMessageModel> localVarResponse = AccettazioniStoricoSendAccountCredentialWithHttpInfo(utenteId);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>ApiResponse of BackofficeModelAPICommonMessageModel</returns>
-        public ApiResponse< BackofficeModelAPICommonMessageModel > AccettazioniStoricoSendAccountCredentialWithHttpInfo (int? utenteId)
-        {
-            // verify the required parameter 'utenteId' is set
-            if (utenteId == null)
-                throw new ApiException(400, "Missing required parameter 'utenteId' when calling AccettazioniStoricoApi->AccettazioniStoricoSendAccountCredential");
-
-            var localVarPath = "/api/AccettazioniStorico/SendAccountCredential";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json", 
-                "text/json", 
-                "application/xml", 
-                "text/xml", 
-                "application/x-www-form-urlencoded"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json",
-                "text/json",
-                "application/xml",
-                "text/xml"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (utenteId != null && utenteId.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(utenteId); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = utenteId; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("AccettazioniStoricoSendAccountCredential", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<BackofficeModelAPICommonMessageModel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (BackofficeModelAPICommonMessageModel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPICommonMessageModel)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of BackofficeModelAPICommonMessageModel</returns>
-        public async System.Threading.Tasks.Task<BackofficeModelAPICommonMessageModel> AccettazioniStoricoSendAccountCredentialAsync (int? utenteId)
-        {
-             ApiResponse<BackofficeModelAPICommonMessageModel> localVarResponse = await AccettazioniStoricoSendAccountCredentialAsyncWithHttpInfo(utenteId);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of ApiResponse (BackofficeModelAPICommonMessageModel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPICommonMessageModel>> AccettazioniStoricoSendAccountCredentialAsyncWithHttpInfo (int? utenteId)
-        {
-            // verify the required parameter 'utenteId' is set
-            if (utenteId == null)
-                throw new ApiException(400, "Missing required parameter 'utenteId' when calling AccettazioniStoricoApi->AccettazioniStoricoSendAccountCredential");
-
-            var localVarPath = "/api/AccettazioniStorico/SendAccountCredential";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json", 
-                "text/json", 
-                "application/xml", 
-                "text/xml", 
-                "application/x-www-form-urlencoded"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json",
-                "text/json",
-                "application/xml",
-                "text/xml"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (utenteId != null && utenteId.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(utenteId); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = utenteId; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("AccettazioniStoricoSendAccountCredential", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<BackofficeModelAPICommonMessageModel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (BackofficeModelAPICommonMessageModel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPICommonMessageModel)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>BackofficeModelAPICommonMessageModel</returns>
-        public BackofficeModelAPICommonMessageModel AccettazioniStoricoUnlockAccountCredential (int? utenteId)
-        {
-             ApiResponse<BackofficeModelAPICommonMessageModel> localVarResponse = AccettazioniStoricoUnlockAccountCredentialWithHttpInfo(utenteId);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>ApiResponse of BackofficeModelAPICommonMessageModel</returns>
-        public ApiResponse< BackofficeModelAPICommonMessageModel > AccettazioniStoricoUnlockAccountCredentialWithHttpInfo (int? utenteId)
-        {
-            // verify the required parameter 'utenteId' is set
-            if (utenteId == null)
-                throw new ApiException(400, "Missing required parameter 'utenteId' when calling AccettazioniStoricoApi->AccettazioniStoricoUnlockAccountCredential");
-
-            var localVarPath = "/api/AccettazioniStorico/UnlockAccountCredential";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json", 
-                "text/json", 
-                "application/xml", 
-                "text/xml", 
-                "application/x-www-form-urlencoded"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json",
-                "text/json",
-                "application/xml",
-                "text/xml"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (utenteId != null && utenteId.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(utenteId); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = utenteId; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("AccettazioniStoricoUnlockAccountCredential", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<BackofficeModelAPICommonMessageModel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (BackofficeModelAPICommonMessageModel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPICommonMessageModel)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of BackofficeModelAPICommonMessageModel</returns>
-        public async System.Threading.Tasks.Task<BackofficeModelAPICommonMessageModel> AccettazioniStoricoUnlockAccountCredentialAsync (int? utenteId)
-        {
-             ApiResponse<BackofficeModelAPICommonMessageModel> localVarResponse = await AccettazioniStoricoUnlockAccountCredentialAsyncWithHttpInfo(utenteId);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="utenteId"></param>
-        /// <returns>Task of ApiResponse (BackofficeModelAPICommonMessageModel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPICommonMessageModel>> AccettazioniStoricoUnlockAccountCredentialAsyncWithHttpInfo (int? utenteId)
-        {
-            // verify the required parameter 'utenteId' is set
-            if (utenteId == null)
-                throw new ApiException(400, "Missing required parameter 'utenteId' when calling AccettazioniStoricoApi->AccettazioniStoricoUnlockAccountCredential");
-
-            var localVarPath = "/api/AccettazioniStorico/UnlockAccountCredential";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json", 
-                "text/json", 
-                "application/xml", 
-                "text/xml", 
-                "application/x-www-form-urlencoded"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json",
-                "text/json",
-                "application/xml",
-                "text/xml"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (utenteId != null && utenteId.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(utenteId); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = utenteId; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("AccettazioniStoricoUnlockAccountCredential", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<BackofficeModelAPICommonMessageModel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (BackofficeModelAPICommonMessageModel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPICommonMessageModel)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
     }
