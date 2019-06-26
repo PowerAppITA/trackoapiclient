@@ -113,6 +113,7 @@ Class | Method | HTTP request | Description
 *UtentiApi* | [**UtentiUnlockAccountCredential**](docs/UtentiApi.md#utentiunlockaccountcredential) | **POST** /api/Utenti/UnlockAccountCredential | 
 *WSApi* | [**WSAddRequest**](docs/WSApi.md#wsaddrequest) | **POST** /api/WS/AddRequest | 
 *WSApi* | [**WSGetPolicy**](docs/WSApi.md#wsgetpolicy) | **POST** /api/WS/GetPolicy | 
+*WSApi* | [**WSGetUserAcceptance**](docs/WSApi.md#wsgetuseracceptance) | **POST** /api/WS/GetUserAcceptance | 
 *WSApi* | [**WSRetrivePanelLink**](docs/WSApi.md#wsretrivepanellink) | **POST** /api/WS/RetrivePanelLink | 
 *WSApi* | [**WSUpdateMultipleRequestStatus**](docs/WSApi.md#wsupdatemultiplerequeststatus) | **POST** /api/WS/UpdateMultipleRequestStatus | 
 *WSApi* | [**WSUpdateRequestStatus**](docs/WSApi.md#wsupdaterequeststatus) | **POST** /api/WS/UpdateRequestStatus | 
@@ -144,6 +145,8 @@ Class | Method | HTTP request | Description
  - [Model.BackofficeModelAPIWSContactAddRequestRichiestaDataItem](docs/BackofficeModelAPIWSContactAddRequestRichiestaDataItem.md)
  - [Model.BackofficeModelAPIWSContactAddRequestSearchIdDataItem](docs/BackofficeModelAPIWSContactAddRequestSearchIdDataItem.md)
  - [Model.BackofficeModelAPIWSContactAddRequestSearchIdsData](docs/BackofficeModelAPIWSContactAddRequestSearchIdsData.md)
+ - [Model.BackofficeModelAPIWSContactGetUserAcceptanceRequestData](docs/BackofficeModelAPIWSContactGetUserAcceptanceRequestData.md)
+ - [Model.BackofficeModelAPIWSContactGetUserAcceptanceResponseData](docs/BackofficeModelAPIWSContactGetUserAcceptanceResponseData.md)
  - [Model.BackofficeModelAPIWSContactRetrivePanelLinkRequestData](docs/BackofficeModelAPIWSContactRetrivePanelLinkRequestData.md)
  - [Model.BackofficeModelAPIWSContactRetrivePanelLinkResponseData](docs/BackofficeModelAPIWSContactRetrivePanelLinkResponseData.md)
  - [Model.BackofficeModelAPIWSContactUpdateMultipleRequestStatusRequestData](docs/BackofficeModelAPIWSContactUpdateMultipleRequestStatusRequestData.md)

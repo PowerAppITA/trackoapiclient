@@ -1,4 +1,4 @@
-# IO.Swagger.Model.BackofficeModelAPIWSContactRetrivePanelLinkRequestData
+# IO.Swagger.Model.BackofficeModelAPIWSContactGetUserAcceptanceRequestData
 ## Properties
 
 Name | Type | Description | Notes

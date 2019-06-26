@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**WSAddRequest**](WSApi.md#wsaddrequest) | **POST** /api/WS/AddRequest | 
 [**WSGetPolicy**](WSApi.md#wsgetpolicy) | **POST** /api/WS/GetPolicy | 
+[**WSGetUserAcceptance**](WSApi.md#wsgetuseracceptance) | **POST** /api/WS/GetUserAcceptance | 
 [**WSRetrivePanelLink**](WSApi.md#wsretrivepanellink) | **POST** /api/WS/RetrivePanelLink | 
 [**WSUpdateMultipleRequestStatus**](WSApi.md#wsupdatemultiplerequeststatus) | **POST** /api/WS/UpdateMultipleRequestStatus | 
 [**WSUpdateRequestStatus**](WSApi.md#wsupdaterequeststatus) | **POST** /api/WS/UpdateRequestStatus | 
@@ -115,6 +116,64 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**BackofficeModelAPIWSPolicyGetPolicyResponseData**](BackofficeModelAPIWSPolicyGetPolicyResponseData.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="wsgetuseracceptance"></a>
+# **WSGetUserAcceptance**
+> BackofficeModelAPIWSContactGetUserAcceptanceResponseData WSGetUserAcceptance (BackofficeModelAPIWSContactGetUserAcceptanceRequestData oRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.trackoApiClient;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class WSGetUserAcceptanceExample
+    {
+        public void main()
+        {
+            var apiInstance = new WSApi();
+            var oRequest = new BackofficeModelAPIWSContactGetUserAcceptanceRequestData(); // BackofficeModelAPIWSContactGetUserAcceptanceRequestData | 
+
+            try
+            {
+                BackofficeModelAPIWSContactGetUserAcceptanceResponseData result = apiInstance.WSGetUserAcceptance(oRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WSApi.WSGetUserAcceptance: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **oRequest** | [**BackofficeModelAPIWSContactGetUserAcceptanceRequestData**](BackofficeModelAPIWSContactGetUserAcceptanceRequestData.md)|  | 
+
+### Return type
+
+[**BackofficeModelAPIWSContactGetUserAcceptanceResponseData**](BackofficeModelAPIWSContactGetUserAcceptanceResponseData.md)
 
 ### Authorization
 

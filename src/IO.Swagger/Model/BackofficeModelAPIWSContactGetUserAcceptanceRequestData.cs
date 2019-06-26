@@ -25,18 +25,18 @@ using SwaggerDateConverter = IO.Swagger.Client.SwaggerDateConverter;
 namespace IO.Swagger.Model
 {
     /// <summary>
-    /// BackofficeModelAPIWSContactRetrivePanelLinkRequestData
+    /// BackofficeModelAPIWSContactGetUserAcceptanceRequestData
     /// </summary>
     [DataContract]
-    public partial class BackofficeModelAPIWSContactRetrivePanelLinkRequestData :  IEquatable<BackofficeModelAPIWSContactRetrivePanelLinkRequestData>, IValidatableObject
+    public partial class BackofficeModelAPIWSContactGetUserAcceptanceRequestData :  IEquatable<BackofficeModelAPIWSContactGetUserAcceptanceRequestData>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="BackofficeModelAPIWSContactRetrivePanelLinkRequestData" /> class.
+        /// Initializes a new instance of the <see cref="BackofficeModelAPIWSContactGetUserAcceptanceRequestData" /> class.
         /// </summary>
         /// <param name="contactEmail">contactEmail.</param>
         /// <param name="sourceName">sourceName.</param>
         /// <param name="tokenAPI">tokenAPI.</param>
-        public BackofficeModelAPIWSContactRetrivePanelLinkRequestData(string contactEmail = default(string), string sourceName = default(string), string tokenAPI = default(string))
+        public BackofficeModelAPIWSContactGetUserAcceptanceRequestData(string contactEmail = default(string), string sourceName = default(string), string tokenAPI = default(string))
         {
             this.ContactEmail = contactEmail;
             this.SourceName = sourceName;
@@ -68,7 +68,7 @@ namespace IO.Swagger.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class BackofficeModelAPIWSContactRetrivePanelLinkRequestData {\n");
+            sb.Append("class BackofficeModelAPIWSContactGetUserAcceptanceRequestData {\n");
             sb.Append("  ContactEmail: ").Append(ContactEmail).Append("\n");
             sb.Append("  SourceName: ").Append(SourceName).Append("\n");
             sb.Append("  TokenAPI: ").Append(TokenAPI).Append("\n");
@@ -92,15 +92,15 @@ namespace IO.Swagger.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as BackofficeModelAPIWSContactRetrivePanelLinkRequestData);
+            return this.Equals(input as BackofficeModelAPIWSContactGetUserAcceptanceRequestData);
         }
 
         /// <summary>
-        /// Returns true if BackofficeModelAPIWSContactRetrivePanelLinkRequestData instances are equal
+        /// Returns true if BackofficeModelAPIWSContactGetUserAcceptanceRequestData instances are equal
         /// </summary>
-        /// <param name="input">Instance of BackofficeModelAPIWSContactRetrivePanelLinkRequestData to be compared</param>
+        /// <param name="input">Instance of BackofficeModelAPIWSContactGetUserAcceptanceRequestData to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(BackofficeModelAPIWSContactRetrivePanelLinkRequestData input)
+        public bool Equals(BackofficeModelAPIWSContactGetUserAcceptanceRequestData input)
         {
             if (input == null)
                 return false;

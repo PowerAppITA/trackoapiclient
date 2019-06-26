@@ -89,6 +89,18 @@ namespace IO.Swagger.Test
         }
         
         /// <summary>
+        /// Test WSGetUserAcceptance
+        /// </summary>
+        [Test]
+        public void WSGetUserAcceptanceTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //BackofficeModelAPIWSContactGetUserAcceptanceRequestData oRequest = null;
+            //var response = instance.WSGetUserAcceptance(oRequest);
+            //Assert.IsInstanceOf<BackofficeModelAPIWSContactGetUserAcceptanceResponseData> (response, "response is BackofficeModelAPIWSContactGetUserAcceptanceResponseData");
+        }
+        
+        /// <summary>
         /// Test WSRetrivePanelLink
         /// </summary>
         [Test]
