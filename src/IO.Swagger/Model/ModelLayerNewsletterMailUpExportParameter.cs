@@ -38,13 +38,15 @@ namespace IO.Swagger.Model
         /// <param name="confirm">confirm.</param>
         /// <param name="returnCode">returnCode.</param>
         /// <param name="baseUrl">baseUrl.</param>
-        public ModelLayerNewsletterMailUpExportParameter(string listId = default(string), string groupId = default(string), string confirm = default(string), string returnCode = default(string), string baseUrl = default(string))
+        /// <param name="listGuid">listGuid.</param>
+        public ModelLayerNewsletterMailUpExportParameter(string listId = default(string), string groupId = default(string), string confirm = default(string), string returnCode = default(string), string baseUrl = default(string), string listGuid = default(string))
         {
             this.ListId = listId;
             this.GroupId = groupId;
             this.Confirm = confirm;
             this.ReturnCode = returnCode;
             this.BaseUrl = baseUrl;
+            this.ListGuid = listGuid;
         }
         
         /// <summary>
@@ -78,6 +80,12 @@ namespace IO.Swagger.Model
         public string BaseUrl { get; set; }
 
         /// <summary>
+        /// Gets or Sets ListGuid
+        /// </summary>
+        [DataMember(Name="ListGuid", EmitDefaultValue=false)]
+        public string ListGuid { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -90,6 +98,7 @@ namespace IO.Swagger.Model
             sb.Append("  Confirm: ").Append(Confirm).Append("\n");
             sb.Append("  ReturnCode: ").Append(ReturnCode).Append("\n");
             sb.Append("  BaseUrl: ").Append(BaseUrl).Append("\n");
+            sb.Append("  ListGuid: ").Append(ListGuid).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -148,6 +157,11 @@ namespace IO.Swagger.Model
                     this.BaseUrl == input.BaseUrl ||
                     (this.BaseUrl != null &&
                     this.BaseUrl.Equals(input.BaseUrl))
+                ) && 
+                (
+                    this.ListGuid == input.ListGuid ||
+                    (this.ListGuid != null &&
+                    this.ListGuid.Equals(input.ListGuid))
                 );
         }
 
@@ -170,6 +184,8 @@ namespace IO.Swagger.Model
                     hashCode = hashCode * 59 + this.ReturnCode.GetHashCode();
                 if (this.BaseUrl != null)
                     hashCode = hashCode * 59 + this.BaseUrl.GetHashCode();
+                if (this.ListGuid != null)
+                    hashCode = hashCode * 59 + this.ListGuid.GetHashCode();
                 return hashCode;
             }
         }

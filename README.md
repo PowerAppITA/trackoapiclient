@@ -112,6 +112,7 @@ Class | Method | HTTP request | Description
 *UtentiApi* | [**UtentiSendAccountCredential**](docs/UtentiApi.md#utentisendaccountcredential) | **POST** /api/Utenti/SendAccountCredential | 
 *UtentiApi* | [**UtentiUnlockAccountCredential**](docs/UtentiApi.md#utentiunlockaccountcredential) | **POST** /api/Utenti/UnlockAccountCredential | 
 *WSApi* | [**WSAddRequest**](docs/WSApi.md#wsaddrequest) | **POST** /api/WS/AddRequest | 
+*WSApi* | [**WSCheckPrivacyPolicyChanged**](docs/WSApi.md#wscheckprivacypolicychanged) | **POST** /api/WS/CheckPrivacyPolicyChanged | 
 *WSApi* | [**WSGetPolicy**](docs/WSApi.md#wsgetpolicy) | **POST** /api/WS/GetPolicy | 
 *WSApi* | [**WSGetUserAcceptance**](docs/WSApi.md#wsgetuseracceptance) | **POST** /api/WS/GetUserAcceptance | 
 *WSApi* | [**WSRetrivePanelLink**](docs/WSApi.md#wsretrivepanellink) | **POST** /api/WS/RetrivePanelLink | 
@@ -155,6 +156,8 @@ Class | Method | HTTP request | Description
  - [Model.BackofficeModelAPIWSContactUpdateRequestStatusRequestData](docs/BackofficeModelAPIWSContactUpdateRequestStatusRequestData.md)
  - [Model.BackofficeModelAPIWSContactUpdateRequestStatusRequestDataItem](docs/BackofficeModelAPIWSContactUpdateRequestStatusRequestDataItem.md)
  - [Model.BackofficeModelAPIWSContactUpdateRequestStatusResponseData](docs/BackofficeModelAPIWSContactUpdateRequestStatusResponseData.md)
+ - [Model.BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData](docs/BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData.md)
+ - [Model.BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData](docs/BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData.md)
  - [Model.BackofficeModelAPIWSPolicyGetPolicyRequestData](docs/BackofficeModelAPIWSPolicyGetPolicyRequestData.md)
  - [Model.BackofficeModelAPIWSPolicyGetPolicyResponseData](docs/BackofficeModelAPIWSPolicyGetPolicyResponseData.md)
  - [Model.BackofficeModelAccettazioniIndexMaskModel](docs/BackofficeModelAccettazioniIndexMaskModel.md)

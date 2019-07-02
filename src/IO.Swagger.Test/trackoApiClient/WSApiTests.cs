@@ -77,6 +77,18 @@ namespace IO.Swagger.Test
         }
         
         /// <summary>
+        /// Test WSCheckPrivacyPolicyChanged
+        /// </summary>
+        [Test]
+        public void WSCheckPrivacyPolicyChangedTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest = null;
+            //var response = instance.WSCheckPrivacyPolicyChanged(oRequest);
+            //Assert.IsInstanceOf<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData> (response, "response is BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData");
+        }
+        
+        /// <summary>
         /// Test WSGetPolicy
         /// </summary>
         [Test]

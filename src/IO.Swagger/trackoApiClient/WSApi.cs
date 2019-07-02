@@ -53,6 +53,27 @@ namespace IO.Swagger.trackoApiClient
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="oRequest"></param>
+        /// <returns>BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData</returns>
+        BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData WSCheckPrivacyPolicyChanged (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="oRequest"></param>
+        /// <returns>ApiResponse of BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData</returns>
+        ApiResponse<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData> WSCheckPrivacyPolicyChangedWithHttpInfo (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="oRequest"></param>
         /// <returns>BackofficeModelAPIWSPolicyGetPolicyResponseData</returns>
         BackofficeModelAPIWSPolicyGetPolicyResponseData WSGetPolicy (BackofficeModelAPIWSPolicyGetPolicyRequestData oRequest);
 
@@ -173,6 +194,27 @@ namespace IO.Swagger.trackoApiClient
         /// <param name="oRequest"></param>
         /// <returns>Task of ApiResponse (BackofficeModelAPIWSContactAddRequestResponseData)</returns>
         System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPIWSContactAddRequestResponseData>> WSAddRequestAsyncWithHttpInfo (BackofficeModelAPIWSContactAddRequestRequestData oRequest);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="oRequest"></param>
+        /// <returns>Task of BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData</returns>
+        System.Threading.Tasks.Task<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData> WSCheckPrivacyPolicyChangedAsync (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="oRequest"></param>
+        /// <returns>Task of ApiResponse (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData)</returns>
+        System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData>> WSCheckPrivacyPolicyChangedAsyncWithHttpInfo (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest);
         /// <summary>
         /// 
         /// </summary>
@@ -539,6 +581,169 @@ namespace IO.Swagger.trackoApiClient
             return new ApiResponse<BackofficeModelAPIWSContactAddRequestResponseData>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (BackofficeModelAPIWSContactAddRequestResponseData) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPIWSContactAddRequestResponseData)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="oRequest"></param>
+        /// <returns>BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData</returns>
+        public BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData WSCheckPrivacyPolicyChanged (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest)
+        {
+             ApiResponse<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData> localVarResponse = WSCheckPrivacyPolicyChangedWithHttpInfo(oRequest);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="oRequest"></param>
+        /// <returns>ApiResponse of BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData</returns>
+        public ApiResponse< BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData > WSCheckPrivacyPolicyChangedWithHttpInfo (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest)
+        {
+            // verify the required parameter 'oRequest' is set
+            if (oRequest == null)
+                throw new ApiException(400, "Missing required parameter 'oRequest' when calling WSApi->WSCheckPrivacyPolicyChanged");
+
+            var localVarPath = "/api/WS/CheckPrivacyPolicyChanged";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/x-www-form-urlencoded"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json",
+                "application/xml",
+                "text/xml"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (oRequest != null && oRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(oRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = oRequest; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("WSCheckPrivacyPolicyChanged", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="oRequest"></param>
+        /// <returns>Task of BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData</returns>
+        public async System.Threading.Tasks.Task<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData> WSCheckPrivacyPolicyChangedAsync (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest)
+        {
+             ApiResponse<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData> localVarResponse = await WSCheckPrivacyPolicyChangedAsyncWithHttpInfo(oRequest);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="oRequest"></param>
+        /// <returns>Task of ApiResponse (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData>> WSCheckPrivacyPolicyChangedAsyncWithHttpInfo (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest)
+        {
+            // verify the required parameter 'oRequest' is set
+            if (oRequest == null)
+                throw new ApiException(400, "Missing required parameter 'oRequest' when calling WSApi->WSCheckPrivacyPolicyChanged");
+
+            var localVarPath = "/api/WS/CheckPrivacyPolicyChanged";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/x-www-form-urlencoded"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json",
+                "application/xml",
+                "text/xml"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (oRequest != null && oRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(oRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = oRequest; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("WSCheckPrivacyPolicyChanged", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData)));
         }
 
         /// <summary>

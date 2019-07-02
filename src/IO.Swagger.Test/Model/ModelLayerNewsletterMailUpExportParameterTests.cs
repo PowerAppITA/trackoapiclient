@@ -106,6 +106,14 @@ namespace IO.Swagger.Test
         {
             // TODO unit test for the property 'BaseUrl'
         }
+        /// <summary>
+        /// Test the property 'ListGuid'
+        /// </summary>
+        [Test]
+        public void ListGuidTest()
+        {
+            // TODO unit test for the property 'ListGuid'
+        }
 
     }
 

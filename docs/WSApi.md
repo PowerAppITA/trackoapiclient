@@ -5,6 +5,7 @@ All URIs are relative to *https://areariservata.tracko.click*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**WSAddRequest**](WSApi.md#wsaddrequest) | **POST** /api/WS/AddRequest | 
+[**WSCheckPrivacyPolicyChanged**](WSApi.md#wscheckprivacypolicychanged) | **POST** /api/WS/CheckPrivacyPolicyChanged | 
 [**WSGetPolicy**](WSApi.md#wsgetpolicy) | **POST** /api/WS/GetPolicy | 
 [**WSGetUserAcceptance**](WSApi.md#wsgetuseracceptance) | **POST** /api/WS/GetUserAcceptance | 
 [**WSRetrivePanelLink**](WSApi.md#wsretrivepanellink) | **POST** /api/WS/RetrivePanelLink | 
@@ -58,6 +59,64 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**BackofficeModelAPIWSContactAddRequestResponseData**](BackofficeModelAPIWSContactAddRequestResponseData.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="wscheckprivacypolicychanged"></a>
+# **WSCheckPrivacyPolicyChanged**
+> BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData WSCheckPrivacyPolicyChanged (BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData oRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.trackoApiClient;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class WSCheckPrivacyPolicyChangedExample
+    {
+        public void main()
+        {
+            var apiInstance = new WSApi();
+            var oRequest = new BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData(); // BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData | 
+
+            try
+            {
+                BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData result = apiInstance.WSCheckPrivacyPolicyChanged(oRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WSApi.WSCheckPrivacyPolicyChanged: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **oRequest** | [**BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData**](BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedRequestData.md)|  | 
+
+### Return type
+
+[**BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData**](BackofficeModelAPIWSPolicyCheckPrivacyPolicyChangedResponseData.md)
 
 ### Authorization
 
