@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Contatto** | **string** |  | [optional] 
+**Lingua** | **string** |  | [optional] 
 **SourceName** | **string** |  | [optional] 
 **SearchIds** | [**BackofficeModelAPIWSContactAddRequestSearchIdsData**](BackofficeModelAPIWSContactAddRequestSearchIdsData.md) |  | [optional] 
 **Richiesta** | [**BackofficeModelAPIWSContactAddRequestRichiestaData**](BackofficeModelAPIWSContactAddRequestRichiestaData.md) |  | [optional] 

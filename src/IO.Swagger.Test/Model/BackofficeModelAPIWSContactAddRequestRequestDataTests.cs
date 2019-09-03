@@ -75,6 +75,14 @@ namespace IO.Swagger.Test
             // TODO unit test for the property 'Contatto'
         }
         /// <summary>
+        /// Test the property 'Lingua'
+        /// </summary>
+        [Test]
+        public void LinguaTest()
+        {
+            // TODO unit test for the property 'Lingua'
+        }
+        /// <summary>
         /// Test the property 'SourceName'
         /// </summary>
         [Test]

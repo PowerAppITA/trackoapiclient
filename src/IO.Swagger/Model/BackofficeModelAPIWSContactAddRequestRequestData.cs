@@ -34,14 +34,16 @@ namespace IO.Swagger.Model
         /// Initializes a new instance of the <see cref="BackofficeModelAPIWSContactAddRequestRequestData" /> class.
         /// </summary>
         /// <param name="contatto">contatto.</param>
+        /// <param name="lingua">lingua.</param>
         /// <param name="sourceName">sourceName.</param>
         /// <param name="searchIds">searchIds.</param>
         /// <param name="richiesta">richiesta.</param>
         /// <param name="accettazioni">accettazioni.</param>
         /// <param name="tokenAPI">tokenAPI.</param>
-        public BackofficeModelAPIWSContactAddRequestRequestData(string contatto = default(string), string sourceName = default(string), BackofficeModelAPIWSContactAddRequestSearchIdsData searchIds = default(BackofficeModelAPIWSContactAddRequestSearchIdsData), BackofficeModelAPIWSContactAddRequestRichiestaData richiesta = default(BackofficeModelAPIWSContactAddRequestRichiestaData), BackofficeModelAPIWSContactAddRequestAccettazioniData accettazioni = default(BackofficeModelAPIWSContactAddRequestAccettazioniData), string tokenAPI = default(string))
+        public BackofficeModelAPIWSContactAddRequestRequestData(string contatto = default(string), string lingua = default(string), string sourceName = default(string), BackofficeModelAPIWSContactAddRequestSearchIdsData searchIds = default(BackofficeModelAPIWSContactAddRequestSearchIdsData), BackofficeModelAPIWSContactAddRequestRichiestaData richiesta = default(BackofficeModelAPIWSContactAddRequestRichiestaData), BackofficeModelAPIWSContactAddRequestAccettazioniData accettazioni = default(BackofficeModelAPIWSContactAddRequestAccettazioniData), string tokenAPI = default(string))
         {
             this.Contatto = contatto;
+            this.Lingua = lingua;
             this.SourceName = sourceName;
             this.SearchIds = searchIds;
             this.Richiesta = richiesta;
@@ -54,6 +56,12 @@ namespace IO.Swagger.Model
         /// </summary>
         [DataMember(Name="Contatto", EmitDefaultValue=false)]
         public string Contatto { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Lingua
+        /// </summary>
+        [DataMember(Name="Lingua", EmitDefaultValue=false)]
+        public string Lingua { get; set; }
 
         /// <summary>
         /// Gets or Sets SourceName
@@ -94,6 +102,7 @@ namespace IO.Swagger.Model
             var sb = new StringBuilder();
             sb.Append("class BackofficeModelAPIWSContactAddRequestRequestData {\n");
             sb.Append("  Contatto: ").Append(Contatto).Append("\n");
+            sb.Append("  Lingua: ").Append(Lingua).Append("\n");
             sb.Append("  SourceName: ").Append(SourceName).Append("\n");
             sb.Append("  SearchIds: ").Append(SearchIds).Append("\n");
             sb.Append("  Richiesta: ").Append(Richiesta).Append("\n");
@@ -139,6 +148,11 @@ namespace IO.Swagger.Model
                     this.Contatto.Equals(input.Contatto))
                 ) && 
                 (
+                    this.Lingua == input.Lingua ||
+                    (this.Lingua != null &&
+                    this.Lingua.Equals(input.Lingua))
+                ) && 
+                (
                     this.SourceName == input.SourceName ||
                     (this.SourceName != null &&
                     this.SourceName.Equals(input.SourceName))
@@ -176,6 +190,8 @@ namespace IO.Swagger.Model
                 int hashCode = 41;
                 if (this.Contatto != null)
                     hashCode = hashCode * 59 + this.Contatto.GetHashCode();
+                if (this.Lingua != null)
+                    hashCode = hashCode * 59 + this.Lingua.GetHashCode();
                 if (this.SourceName != null)
                     hashCode = hashCode * 59 + this.SourceName.GetHashCode();
                 if (this.SearchIds != null)
